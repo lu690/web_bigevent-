@@ -54,7 +54,7 @@ $(function () {
       url: "/api/login",
       data: $("#form_login").serialize(),
       success: (res) => {
-        console.log(res);
+        // console.log(res);
         if (res.status !== 0) return layer.msg("登录失败!");
         layer.msg("登录成功!");
         localStorage.setItem("token", res.token);
