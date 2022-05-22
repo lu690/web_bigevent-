@@ -56,3 +56,8 @@ function renderAvatar(user) {
     $(".text-avatar").html(firstName).show();
   }
 }
+
+// 对应art_pub.js里发布文章的跳转列表 调用
+function change() {
+  $("#art_list").addClass("layui-this").next().removeClass("layui-this");
+}
